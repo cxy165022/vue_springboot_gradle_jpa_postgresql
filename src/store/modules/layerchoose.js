@@ -1,8 +1,8 @@
-import qs from 'qs'
-import {Modal} from 'iview'
+/* import qs from 'qs'
+import {Modal} from 'iview' */
 
 const state = {
-  layerchoose: ""
+  layerchoose: ''
 }
 
 const getters = {

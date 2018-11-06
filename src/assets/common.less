@@ -1,0 +1,100 @@
+@import '~iview/src/styles/index.less';
+@primary-color: #8f6a44;
+.ivu-menu-vertical .ivu-menu-item, .ivu-menu-vertical .ivu-menu-submenu-title{
+  padding: 9px 24px;
+  border-bottom: 1px #1e1e1e solid;
+}
+.login{
+  #com-form{
+    .ivu-form-item{
+      margin-bottom: 18px;
+    }
+    .ivu-form-item-content{
+      display: flex;
+      span{
+        display: inline-block;
+        color: #000;
+        width: 60px;
+        font-size: 16px;
+      }
+      .button.ivu-btn.ivu-btn-primary{
+        background: #2b2b2b;
+        border: 1px #fff solid;
+        width: 74px;
+        text-align: center;
+        padding: 3px 7px;
+        margin-left: 60px;
+        span{
+          color: #fff;
+        }
+      }
+
+      .yzm{
+        display: inline-block;
+        width: 50px;
+        margin-left: 20px;
+      }
+    }
+    .ivu-input-wrapper{
+      flex: 1;
+      &.yzminput{
+        flex: inherit;
+        width: 66px;
+      }
+    }
+
+  }
+}
+#sys-layout{
+  #sys-sidebar{
+    width: 100%;
+    background: url("leftbar_bg1.png") no-repeat;
+    background-size: cover;
+    overflow: auto;
+    height: calc(~'100vh - 60px');
+    & .ivu-menu-vertical {
+      .ivu-menu-submenu .ivu-menu-item{
+        color: #333;
+      }
+      >.ivu-menu-item:hover,>.ivu-menu-submenu .ivu-menu-submenu-title:hover{
+        background: #ded8cf;
+      }
+      >.ivu-menu-submenu.ivu-menu-opened .ivu-menu-item:hover,>.ivu-menu-submenu.ivu-menu-opened .ivu-menu-item.ivu-menu-item-active.ivu-menu-item-selected{
+        background: #f1e2cc;
+      }
+    }
+    .ivu-menu.ivu-menu-light.ivu-menu-vertical{
+      >li{
+        font-size: 18px;
+        font-family:"KaiTi";
+      }
+      .ivu-menu{
+        background: #ded8cf;
+        padding: 0px 12%;
+        .ivu-menu-item{
+          padding-left: 6px !important;
+          border-bottom: 1px #999 dashed;
+          min-width: 148px;
+          img{
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 1px;
+            padding-right: 8px !important;
+          }
+          &:last-child{
+            border-bottom: 0px;
+          }
+          &:hover{
+            background: none;
+          }
+
+        }
+      }
+    }
+
+  }
+}
+
+.ivu-btn-ghost{
+  color: #333;
+}

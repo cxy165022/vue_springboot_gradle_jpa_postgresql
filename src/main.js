@@ -3,13 +3,22 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
+import 'babel-polyfill'
+
+// iView 完整引入
+import iView from 'iview'
+
+Vue.use(iView)
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
+  // el: '#app',
   router,
-  components: { App },
-  template: '<App/>'
-})
+  // components: { App },
+  // template: '<App/>'
+  store,
+  render: h => h(App)
+}).$mount('#app')
