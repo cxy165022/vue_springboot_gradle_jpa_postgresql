@@ -111,7 +111,7 @@
 <style lang="less" scoped>
   #main{
     width: 100%;
-    height: 100%;
+    height: 768px;
     display: block;
     background: #212121;
     position: relative;
